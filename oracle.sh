@@ -179,8 +179,14 @@ _install_oracle_software() {
     SELECTED_LANGUAGES=en \
     oracle.install.db.InstallEdition=EE \
     DECLINE_SECURITY_UPDATES=true  -silent -ignoreSysPrereqs -ignorePrereq -waitForCompletion"
+    
+     _log "*** YV Ramesh Reddy      ****************"
+     _log "***  executing orainstRoot.sh and root.sh"
+     _log "*** YV Ramesh Reddy      ****************"
+    
     ${ORAINVDIR}/orainstRoot.sh
     ${ORACLE_HOME}/root.sh
+    _log "***  Completed Execution of   orainstRoot.sh and root.sh  ****************"
 }
 
 # create a very minimal pfile
@@ -276,4 +282,4 @@ _extract_sources
 _install_oracle_software
 _create_pfile
 #_create_database
-_create_env
+#_create_env
