@@ -275,5 +275,5 @@ _install_required_software
 _extract_sources
 _install_oracle_software
 _create_pfile
-_create_database
+#_create_database
 _create_env
